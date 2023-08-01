@@ -1,7 +1,11 @@
+body{
+    background-color: rgba(151,254,136,0.52);
+}
+
 .img{
     height: 300px;
     width: 300px;
-    border-radius: 10px;
+    border-radius: 100px;
     padding-right: 1%;
     padding-left: 1%;
     position: relative;
@@ -11,15 +15,20 @@
 .wrapper{
     position: relative;
     margin: auto;
+    display: flex;
     overflow: hidden;
+    align-content: center;
+    align-items: center;
     max-width: 980px;
     height:300px;
     white-space: nowrap;
+    scroll-behavior: smooth;
 
 }
 
 .container{
-   transition: transform 250ms ease-in-out;
+    /*transition: transform 250ms ease-in-out;*/
+
 }
 
 .div-img{
@@ -28,13 +37,32 @@
 
 .btn-left{
     position: absolute;
-   margin-left: 580px;
+    font-size: 100px;
+    margin-left: 580px;
+    background-color:transparent;
+    border-color: transparent;
+    color: #8b07ff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 300px;
     padding: 10px;
+    display: none;
 
 }
 .btn-right{
     position: absolute;
+    background-color:transparent;
+    border-color: transparent;
+    color: #8b07ff;
+    cursor: pointer;
+    font-size: 100px;
     margin-left: 1500px;
+    border-radius: 20px;
     padding: 10px;
+
+}
+
+.parent-wrapper{
+
 
 }
